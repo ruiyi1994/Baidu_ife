@@ -13,7 +13,7 @@
 		<li>网页链接4</li>
 	</ul>
 	<h2>文章一级标题</h2>
-	<h2>文章二级标题</h2>
+	<h3>文章二级标题</h3>
 	<span>文章作者</span>
 	<span>发布时间</span>
 	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落</p>
@@ -22,7 +22,7 @@
 	<img src="gf.jpg" alt="girlfriend">
 	<p>这是非常长的段落.里面不知道有啥子稀奇古怪的东东，希望大家能喜欢我做的网页，pisica3图片管理软件正在疯狂扫描中。<a href="http://hello.com" target="_blank">未知的hello</a></p>
 	<h2>这是另一篇文章的标题</h2>
-	<h2>文章二级标题</h2>
+	<h3>文章二级标题</h3>
 	<span>文章作者</span>
 	<span>发布时间</span>
 	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落</p>
@@ -55,15 +55,15 @@
 	<h3>好看的图片</h3>
 	<img src="gf.jpg" alt="">
 	<h2>最后一篇文章一级标题</h2>
-	<h2>二级标题</h2>
-	<span>作者</span><span>发布时间</span>
+	<h3>二级标题</h3>
+	<p>作者 发布时间</p>
 	<ol>
 		<li>发布时间1</li>
 		<li>发布时间2</li>
 		<li>发布时间3</li>
 	</ol>
-	h3{下面是一张表格，加了border=1好让你看出这是个表格}
-	<table>
+	<h3>下面是一张表格，加了border=1好让你看出这是个表格</h3>
+	<table border="1">
 		<tbody>
 			<tr>
 				<th>表头</th>
@@ -96,28 +96,32 @@
 			</tr>
 		</tbody>
 	</table>
-	<h3>这里是个侧栏</h3>
+	<h2>这里是个侧栏</h2>
 	<h3>侧栏注册窗口标题</h3>
-	<form action="#">
+	<form action="#" method="post">
 		请输入邮箱地址：<input type="text" value="这是一个文本输入框">
-		<span>邮箱地址请按要求输入：</span>
+		<p>邮箱地址请按要求输入：</p>
 		请输入密码：<input type="text" value="文本">
 		请再次输入密码：<input type="text" value="文本">
-		<span>密码为6-16位字母或数字</span>
-		性别：<input type="radio" name="sex">男<input type="radio" name="sex">女
-		城市	
+		<p>密码为6-16位字母或数字</p>
+		<label for="">性	别：</label>
+		<input type="radio" name="sex" value="man">男
+		<input type="radio" name="sex" value="woman">女
+		<label for="">城市</label>	
 		<select>
 		      <option value="北京">北京</option>
 		      <option value="上海" selected="selected">上海</option>
 		      <option value="合肥">合肥</option>
 		      <option value="南京">南京</option>
 		</select>
-		爱好：
+		<label for="">爱好：</label>
 		<input type="checkbox" value="画画">画画
 		<input type="checkbox" value="打飞机">打飞机
 		<input type="checkbox" value="编程">编程 
-		个人描述：
-		<textarea rows="2" cols="20">在这输入内容</textarea>
+		<label for="">个人描述：</label>
+		<textarea rows="2" cols="20">
+		在这输入内容,有两行的空间
+		</textarea>
 		<input type="submit" value="现在提交">
 	</form>
 
